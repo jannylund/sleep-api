@@ -5,4 +5,4 @@ ADD requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 WORKDIR /app
-CMD python main.py
+CMD flask run --host=0.0.0.0
